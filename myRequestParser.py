@@ -25,11 +25,6 @@ def usage():
           ./myRequestParser.py [http request file name]
     """)
 
-    '''
-    Uncomment and remove request_Str method both do the same thing but with additional checks
-    '''
-
-
 # def request_str():
 
 #   if len(sys.argv) != 3:  # real val 2, temp=1

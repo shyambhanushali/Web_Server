@@ -18,6 +18,9 @@ import os
 
 PHP_RESOURCES = "PHP-Resources"
 
+"""
+Implementing GET
+"""
 
 def mget(request_dict):
     current_path = Path.cwd()
@@ -37,7 +40,9 @@ def mget(request_dict):
             return status_code.status_code_403()
     return status_code.status_code_404()
 
-
+"""
+Implementing POST method
+"""
 def mpost(request_dict):
     print("ENTERING POST METHOD!")
     if request_dict['headers']['Content-Length'] is None or request_dict['headers']['Content-Length'] == "":
@@ -59,7 +64,9 @@ def mpost(request_dict):
             return status_code.status_code_403()
     return status_code.status_code_404()
 
-
+"""
+Implementing PUT method
+"""
 def mput(request_dict):
     current_path = Path.cwd()
     requested_path = Path(request_dict["resource_uri"])
@@ -69,7 +76,9 @@ def mput(request_dict):
 
     return status_code.status_code_201(body, str(requested_path))
 
-
+"""
+Implementing DELETE method
+"""
 def mdelete(request_dict):
     current_path = Path.cwd()
     requested_path = Path(request_dict["resource_uri"])
