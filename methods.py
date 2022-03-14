@@ -63,7 +63,7 @@ def mpost(request_dict):
 def mput(request_dict):
     current_path = Path.cwd()
     requested_path = Path(request_dict["resource_uri"])
-    final_path = Path(str(current_path) + str(requested_path))
+    final_path = Path(str(current_path) + os.sep + PHP_RESOURCES + str(requested_path))
     body = request_dict["body"]
     final_path.write_text(body)
 
