@@ -3,6 +3,11 @@
 
 
 **Building a web server in python without using any external libraries**
+Dependencies:
+Install php-cgi library in Ubuntu:
+sudo apt-get update -y
+sudo apt-get install -y php-cgi
+
 
 USAGE:
 python3 server.py 127.0.0.1 8000 #http
