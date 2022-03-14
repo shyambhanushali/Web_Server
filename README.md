@@ -1,5 +1,5 @@
-**# Web_Server**
-**# Project B: Writing a Web Server**
+# Web_Server
+# Project B: Writing a Web Server
 
 
 **Building a web server in python without using any external libraries**
