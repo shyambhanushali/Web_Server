@@ -14,28 +14,12 @@ request_dict = {}
 
 
 def usage():
-    '''
-    Print usage form
-    python3 myRequestParser.py [http request file name]
-    '''
     print("""
     Usage:Change permissions of the file and execute
 
           chmod +x myRequestParser.py \n
           ./myRequestParser.py [http request file name]
     """)
-
-# def request_str():
-
-#   if len(sys.argv) != 3:  # real val 2, temp=1
-#       usage()
-#       sys.exit(1)
-#       pass
-#   else:
-
-#       with open(sys.argv[1], 'rb') as f:
-#           req = f.read()
-#           return req
 
 def get_headers_body(request):
     request_line_and_headers = request.split("\\r\\n\\r\\n")
@@ -99,20 +83,6 @@ def check_request_line(request_line):  #############
         check_version(version)
 
 
-# def check_headers(headers):
-# def http_request_parser(request):
-#   # checklist = []
-#   # allowed_methods = ["GET", "POST", "PUT", "DELETE", "CONNECT"]
-#   request_dict = {}
-#   request_dict["response_code"] = 200
-#   # print(request_dict)
-#   # request = request_str()
-#   request_line = request.split(b"\r\n")[0].decode("utf-8")
-#   check_request_line(request_line)
-#   headers,body = get_headers_body(request)
-#   request_dict["headers"] = headers
-#   request_dict["body"] = body
-#   return request_dict
 def http_request_parser(request):
     request_dict["response_code"] = 200
     request_line = request.split("\\r\\n")[0]

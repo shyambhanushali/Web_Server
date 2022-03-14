@@ -16,12 +16,10 @@ def usage():
     Usage:Change permissions of the file and execute
 
           chmod +x server.py \n
+          ./server.py [IP] []PORT]
           ./server.py [IP] [PORT] [path to x509 crt or pem file] [path to private key paired with x509 cert]
     """)
 
-    '''
-    Uncomment and remove request_Str method both do the same thing but with additional checks
-    '''
 
 def collect_info():
     '''

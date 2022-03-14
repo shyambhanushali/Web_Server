@@ -17,7 +17,9 @@ def logs(request_line):
                         datefmt='%m/%d/%Y %I:%M:%S %p')
     logging.info(request_line)
 
-
+"""
+Handler handles all the incoming requests and sends the response
+"""
 def handler(sock):
     response = ""
     try:
@@ -82,7 +84,10 @@ def execute_method(request_dict):
 def get_request(sock):
     return str(sock.recv(1024))
 
-
+"""
+The listener starts the server
+Takes in input data dict from the command line
+"""
 def listener(data):
     # Start the server with the arguments given
 
@@ -101,7 +106,9 @@ def listener(data):
         t = threading.Thread(target=handler, args=(conn,))
         t.start()
 
-
+"""
+Create a https_socket
+"""
 def https_socket(conn, x509_cert, private_key):
     context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
     context.verify_mode = ssl.CERT_OPTIONAL
