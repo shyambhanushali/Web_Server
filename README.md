@@ -4,25 +4,29 @@
 
 **Building a web server in python without using any external libraries**
 
-Dependencies:
+<h2>Dependencies:</h2>
 
 Install php-cgi library in Ubuntu:
 
-sudo apt-get update -y
+<b>sudo apt-get update -y
 
 
-sudo apt-get install -y php-cgi
+sudo apt-get install -y php-cgi</b>
 
 
 USAGE:
-python3 server.py 127.0.0.1 8000 #http
+
+<b>python3 server.py 127.0.0.1 8000 #http
 
 
-python3 server.py 127.0.0.1 8000 private.key public.cert #https
+python3 server.py 127.0.0.1 8000 private.key public.cert #https</b>
+
+<h2> Send Requests </h2>
 
 GET request to 127.0.0.1:8000/handleGet.php?firstName=Virat&lastName=Kohli
 
 
 POST request to 127.0.0.1:8000/handlePost.php where body=firstName=Virat&lastName=Kohli
 
-Attacking the webserver: Check out the **attacking_server.pdf **
+<h2> Attacking the server </h2>
+Attacking the webserver: Check out the <b>attacking_server.pdf</b>
