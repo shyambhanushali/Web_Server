@@ -73,7 +73,7 @@ def mput(request_dict):
 def mdelete(request_dict):
     current_path = Path.cwd()
     requested_path = Path(request_dict["resource_uri"])
-    final_path = Path(str(current_path) + str(requested_path))
+    final_path = Path(str(current_path) + os.sep + PHP_RESOURCES + str(requested_path))
     if final_path.exists():
         final_path.unlink()
         return status_code.status_code_200(f"{requested_path} FILE DELETED SUCCESSFULLY")
