@@ -1,0 +1,12 @@
+GET / HTTP/1.1
+Host: tryhackme.com
+Cookie: _ga=GA1.2.1355217642.1597358709; cf_clearance=cfe8c8733fa2bc92945735f151d8ddd1f44c1f46-1616096052-0-150; cookieconsent_status=dismiss; AWSALB=n87UTtcEyNVZko5/LkHrXfY+IZeFxSlVnnUuz22/Un6ecTWVq0BEIYafCP4b0n3fJDY4iNjUXVxt1FNzOa5aTAq4Y6ozQfmBUMC1gu3A5pdy4DyBSlmkP7z2fZvE; AWSALBCORS=n87UTtcEyNVZko5/LkHrXfY+IZeFxSlVnnUuz22/Un6ecTWVq0BEIYafCP4b0n3fJDY4iNjUXVxt1FNzOa5aTAq4Y6ozQfmBUMC1gu3A5pdy4DyBSlmkP7z2fZvE; _csrf=LIlbFZuon6uQAC693DyjXUQx; connect.sid=s%3APlQ5hB05csJwrOYldd0tDsZZ3XX3cN2O.zO%2FBtWLdQVBNOvF071cYsf86aBEEWOdWv7PqvVM8P18; _gid=GA1.2.936208447.1645842894; _gat_gtag_UA_129037102_1=1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+Te: trailers
+Connection: close
+
