@@ -14,7 +14,7 @@ Install php-cgi library in Ubuntu:
 sudo apt-get install -y php-cgi</b>
 
 
-USAGE:
+<h2>USAGE:</h2>
 
 <b>python3 server.py 127.0.0.1 8000 #http
 
